@@ -1,5 +1,5 @@
-# $Creds = Get-Credential
-$arrays = ("ussdipure01")
+$Creds = Get-Credential
+$arrays = (Get-Content ./pure-arrays-to-change.txt)
 $LDAPServerAndPort = ("duoproxy.inbcu.com:2389")
 function UpdateLDAPserver {
 	param (
